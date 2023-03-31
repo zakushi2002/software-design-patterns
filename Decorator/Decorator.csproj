@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BF37B20-89F3-468D-999B-C0F5B3AC68E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Decorator</RootNamespace>
+    <AssemblyName>Decorator</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\IPizza.cs" />
+    <Compile Include="Core\Pizza.cs" />
+    <Compile Include="Core\PizzaDecorator.cs" />
+    <Compile Include="DecoratorDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecoratorDemo.Designer.cs">
+      <DependentUpon>DecoratorDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Decorators\Bacon.cs" />
+    <Compile Include="Decorators\BellPepper.cs" />
+    <Compile Include="Decorators\GrilledChicken.cs" />
+    <Compile Include="Decorators\Mushroom.cs" />
+    <Compile Include="Decorators\Onion.cs" />
+    <Compile Include="Decorators\Sausage.cs" />
+    <Compile Include="Decorators\Shrimp.cs" />
+    <Compile Include="Decorators\Squid.cs" />
+    <Compile Include="Decorators\Tomato.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DecoratorDemo.resx">
+      <DependentUpon>DecoratorDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\1phomai.png" />
+    <Content Include="Images\2phomai.png" />
+    <Content Include="Images\3phomai.png" />
+    <Content Include="Images\bacon.png" />
+    <Content Include="Images\bellpepper.png" />
+    <Content Include="Images\grilledchiken.png" />
+    <Content Include="Images\mushroom.png" />
+    <Content Include="Images\onion.png" />
+    <Content Include="Images\pizza.png" />
+    <Content Include="Images\Pizza\pizzaMushroom.png" />
+    <Content Include="Images\Pizza\pizzaMushroomSausage.png" />
+    <Content Include="Images\Pizza\pizzaMushroomSausageShrimp.png" />
+    <Content Include="Images\Pizza\pizzaMushroomShrimp.png" />
+    <Content Include="Images\Pizza\pizzaMushroomSquid.png" />
+    <Content Include="Images\Pizza\pizzaMushroomTomato.png" />
+    <Content Include="Images\Pizza\pizzaMushroomTomatoSausage.png" />
+    <Content Include="Images\Pizza\pizzaMushroomTomatoShrimp.png" />
+    <Content Include="Images\Pizza\pizzaMushroomTomatoShrimpSausage.png" />
+    <Content Include="Images\Pizza\pizzaMushroomTomatoShrimpSausageSquid.png" />
+    <Content Include="Images\Pizza\pizzaMushroomTomatoShrimpSquid.png" />
+    <Content Include="Images\Pizza\pizzaMushroomTomatoSquid.png" />
+    <Content Include="Images\Pizza\pizzaSausage.png" />
+    <Content Include="Images\Pizza\pizzaSausageSquid.png" />
+    <Content Include="Images\Pizza\pizzaSausageSquidMushroomTomato.png" />
+    <Content Include="Images\Pizza\pizzaShrimp.png" />
+    <Content Include="Images\Pizza\pizzaShrimpSausage.png" />
+    <Content Include="Images\Pizza\pizzaShrimpSausageSquidMushroom.png" />
+    <Content Include="Images\Pizza\pizzaShrimpSquid.png" />
+    <Content Include="Images\Pizza\pizzaShrimpSquidMushroom.png" />
+    <Content Include="Images\Pizza\pizzaShrimpSquidSausage.png" />
+    <Content Include="Images\Pizza\pizzaSquid.png" />
+    <Content Include="Images\Pizza\pizzaSquidMushroomSausage.png" />
+    <Content Include="Images\Pizza\pizzaSquidTomatoSausage.png" />
+    <Content Include="Images\Pizza\pizzaTomato.png" />
+    <Content Include="Images\Pizza\pizzaTomatoSausage.png" />
+    <Content Include="Images\Pizza\pizzaTomatoShrimp.png" />
+    <Content Include="Images\Pizza\pizzaTomatoShrimpSausage.png" />
+    <Content Include="Images\Pizza\pizzaTomatoShrimpSausageSquid.png" />
+    <Content Include="Images\Pizza\pizzaTomatoShrimpSquid.png" />
+    <Content Include="Images\Pizza\pizzaTomatoSquid.png" />
+    <Content Include="Images\question.jpg" />
+    <Content Include="Images\sausage.png" />
+    <Content Include="Images\shrimp.png" />
+    <Content Include="Images\squid.png" />
+    <Content Include="Images\tomato.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
