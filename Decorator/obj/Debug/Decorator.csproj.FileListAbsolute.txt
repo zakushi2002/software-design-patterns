@@ -1,0 +1,11 @@
+D:\Learningspace\HK2_2022-2023_N3\Software_Design_Patterns-12g30-16g00\Done\software-design-patterns\Decorator\bin\Debug\Decorator.exe.config
+D:\Learningspace\HK2_2022-2023_N3\Software_Design_Patterns-12g30-16g00\Done\software-design-patterns\Decorator\bin\Debug\Decorator.exe
+D:\Learningspace\HK2_2022-2023_N3\Software_Design_Patterns-12g30-16g00\Done\software-design-patterns\Decorator\bin\Debug\Decorator.pdb
+D:\Learningspace\HK2_2022-2023_N3\Software_Design_Patterns-12g30-16g00\Done\software-design-patterns\Decorator\obj\Debug\Decorator.csproj.AssemblyReference.cache
+D:\Learningspace\HK2_2022-2023_N3\Software_Design_Patterns-12g30-16g00\Done\software-design-patterns\Decorator\obj\Debug\Decorator.csproj.SuggestedBindingRedirects.cache
+D:\Learningspace\HK2_2022-2023_N3\Software_Design_Patterns-12g30-16g00\Done\software-design-patterns\Decorator\obj\Debug\Decorator.DecoratorDemo.resources
+D:\Learningspace\HK2_2022-2023_N3\Software_Design_Patterns-12g30-16g00\Done\software-design-patterns\Decorator\obj\Debug\Decorator.Properties.Resources.resources
+D:\Learningspace\HK2_2022-2023_N3\Software_Design_Patterns-12g30-16g00\Done\software-design-patterns\Decorator\obj\Debug\Decorator.csproj.GenerateResource.cache
+D:\Learningspace\HK2_2022-2023_N3\Software_Design_Patterns-12g30-16g00\Done\software-design-patterns\Decorator\obj\Debug\Decorator.csproj.CoreCompileInputs.cache
+D:\Learningspace\HK2_2022-2023_N3\Software_Design_Patterns-12g30-16g00\Done\software-design-patterns\Decorator\obj\Debug\Decorator.exe
+D:\Learningspace\HK2_2022-2023_N3\Software_Design_Patterns-12g30-16g00\Done\software-design-patterns\Decorator\obj\Debug\Decorator.pdb
